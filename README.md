@@ -16,3 +16,5 @@ This work started in September 2014 and is in the testing phase.
 We expect to deliver the first stable version in November 2014.
 
 Intermediate release for beta testing will be available soon.
+
+The parser was initially developped by Thomas Rolling (UTBM) in the frame of an internship.
