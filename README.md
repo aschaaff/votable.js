@@ -13,7 +13,9 @@ link to VOTable: http://www.ivoa.net/documents/VOTable/
 
 This work started in September 2014.
 
-The parser was initially developped by Thomas Rolling (UTBM) in the frame of an internship.
+The parser was initially developped by Thomas Rolling (UTBM) in the frame of an internship and followed by André Schaaff and Gilles Landais.
 
-Example of implementation: http://vizier.u-strasbg.fr/vizier/welcome/
+It has been tested in various situations but if you encounter a problem or if you have suggestions concerning corrections and / or evolutions you may send a mail to cds-question@unistra.fr with the title votable.js
+
+Example of implementation in VizieR: http://vizier.u-strasbg.fr/vizier/welcome/
 
