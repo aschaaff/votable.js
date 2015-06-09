@@ -11,10 +11,6 @@ VOTable is a Recommendation from the IVOA (International Virtual Observatory All
 
 link to VOTable: http://www.ivoa.net/documents/VOTable/
 
-This work started in September 2014 and is in the testing phase.
-
-We expect to deliver the first stable version in November 2014.
-
-Intermediate release for beta testing will be available soon.
+This work started in September 2014.
 
 The parser was initially developped by Thomas Rolling (UTBM) in the frame of an internship.
