@@ -14,3 +14,6 @@ link to VOTable: http://www.ivoa.net/documents/VOTable/
 This work started in September 2014.
 
 The parser was initially developped by Thomas Rolling (UTBM) in the frame of an internship.
+
+Example of implementation: http://vizier.u-strasbg.fr/vizier/welcome/
+
