@@ -64,7 +64,7 @@ function Parser() {
       * Get the prefixe of the document.
       *
       * Example :
-      * Extract of Votable : <vot:VOTABLE version="1.2" ...
+      * Extract of Votable : <vot:VOTABLE version="1.3" ...
       * Ouput : vot:
       *
       * @return : string
