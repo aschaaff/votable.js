@@ -19,6 +19,8 @@
 
         votables.js - Javascript library for the VOTable format (IVOA
         standard) parsing
+        
+        version 1.0
 
         Author: Thomas Rolling (CDS / UTBM)
         For questions concerning this work: Andre Schaaff (CDS)
