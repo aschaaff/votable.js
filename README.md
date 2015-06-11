@@ -1,6 +1,6 @@
 # votable.js
 
-Javascript parser for VOTable format
+Javascript parser for VOTable
 
 votable.js is a Javascript parser to handle the VOTable format.
 
