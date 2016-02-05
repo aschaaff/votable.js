@@ -118,7 +118,7 @@ function Parser() {
         var time = new Date().getTime()
         var asyncmode = false;
         if (thisParser.callbackfn != null) asyncmode = true;
-        $.ajaxSetup({async: asyncmode});
+        $.ajaxSetup({async: asyncmode, dataType: 'xml'});
 
         $.get(xmlDoc, function(DataXmlDoc) {
                 var i = 0, benchmark;
