@@ -118,7 +118,7 @@ function Parser() {
         var time = new Date().getTime()
         var asyncmode = false;
         if (thisParser.callbackfn != null) asyncmode = true;
-        $.ajaxSetup({async: asyncmode});
+        $.ajaxSetup({async: asyncmode, dataType: 'xml'});
 
         $.get(xmlDoc, function(DataXmlDoc) {
                 var i = 0, benchmark;
@@ -153,7 +153,7 @@ function Parser() {
                     TableData[i] = [];
                 }
 
-                if (thisParser.callbackfn != null) thisParser.callbackfn(thisParser)
+                if (thisParser.callbackfn != null) thisParser.callbackfn(thisParser);
         })
 
         .fail(function() {
@@ -599,7 +599,7 @@ function Parser() {
     ***/
 
     function ParseXmlTableData() {
-        var rows = {TR: []}
+        var rows = {TR: []};
         var column = {TD: []};
         var i = 0, j = 0, findTable, findResource, debut = new Date().getTime(), fin;
 
@@ -733,7 +733,8 @@ function Parser() {
             }
         }
         return TableData[Selected.resource.i][Selected.table.i];
-    }
+    };
+    
 
 
     /***
@@ -1003,7 +1004,24 @@ function Parser() {
         }
 
         return output;
-    }
+    };
+    
+    /***
+     * Get values of current selected table and resource as an array of arrays
+     * 
+     * example:  [ ['HD 1',	'001.28680161',	'+67.84000375',	'SB*'], ['IRAS 00027+6733', '001.3293',	'+67.8291',	'IR'] ]
+     *
+     * @return : array of arrays
+   ***/
+
+   this.getArrayOfData = function() {
+	   var data = this.GetData();
+	   var output = [];
+	   for (var i = 0, l= data.TR.length; i < l; i++) {
+           output.push(data.TR[i].TD);
+       }
+	   return output;
+   };
 
 
     /***
